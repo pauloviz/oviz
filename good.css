@@ -1,0 +1,383 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  background-color: rgb(1, 1, 19);
+  align-items: center;
+  
+
+  z-index: 100;
+  flex-flow: row nowrap;
+color: white;
+font-family: monospace;
+font-size: 30px;
+  font-weight: 100;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: red;
+  display: none;
+
+}
+.nav-links{
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+  
+}
+.nav-links li{
+  list-style: none;
+ 
+}
+.nav-links a{
+  color: rgb(240, 236, 236);
+  padding: 0.75em 2em;
+  display: block;
+  font-size: large;
+  text-decoration: none;
+  text-transform: none;
+  margin-left: -20px;
+
+
+}
+.nav-links a:hover{
+  background: rgb(235, 235, 235);
+  color: black;
+  text-decoration: none;
+  
+}
+
+.burger {
+  display: none;
+}
+.burger div{
+width: 25px;
+height: 3px;
+background-color: white;
+margin: 5px;
+transition: all 0.3s ease;
+}
+.search-bar, .search-bar2 {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 20px;
+  background-color: rgb(48, 48, 95);
+  padding-left: 10px;
+  padding-right: 30px;
+  font-size: large;
+  color: white;
+  border: 0;
+}
+.search-bar2{
+  margin: 0 auto;
+  width: 100%;
+}
+button {
+  cursor: pointer;
+}
+.menu-button {
+  border-color: white;
+  background-color: rgb(1, 1, 19);
+  color: white;
+  border-width: 0.2px;
+  padding: 2px 12px;
+  font-size: large;
+}
+.sign-button {
+  background: linear-gradient(#ffbf2e, #ff9e28);
+  padding: 2px 12px;
+  font-size: large;
+  font-family: monospace;
+  border-width: 2px;
+  border-color: #fe7c22;
+  margin-right: 10px;
+}
+.sign-button:hover {
+  background: linear-gradient(#ffbf2e,#ffbf2e);
+}
+.sandwich {
+  padding: 2px 12px;
+  border-width: 2px;
+  border-color: #fe7c22;
+  margin-right: 10px;
+  color: rgb(1, 1, 19);
+  background: linear-gradient(#ffbf2e, #ff9e28);
+  
+}
+.breakfast {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4em;
+  margin-right: -50px;
+  display: none;
+}
+.hero {
+  margin-top: 80px;
+  
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+
+}
+h1 {
+  font-size: 3rem;
+  margin-top: 2em;
+  display: inline-block;
+  text-align: left;
+  margin-top: -50px;
+  color: rgb(1, 1, 19);
+}
+br {
+  display: block;
+  content: "";
+  margin-top: 30px;
+}
+
+.subhead {
+  text-align: left;
+  display: inline-block;
+  margin-top: -50px;
+  font-size: 1.5rem;
+  max-width: 50%;
+  font-weight: bold;
+}
+.logos {
+  display: flex;
+  justify-content: space-between;
+  min-width: 50%;
+  
+}
+.free {
+  background: linear-gradient(#ffbf2e, #ff9e28);
+  padding: 10px 64px;
+  font-size: 25px;
+  border-color: rgb(150, 97, 29);
+  font-family: monospace;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  border-width: 3px;
+}
+.free:hover {
+  background: linear-gradient(#ffbf2e, #ffbf2e);
+  cursor: pointer;
+  transition: all 0.05s;
+}
+.korea {
+  color: #9370db;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.seen {
+  height: 180px;
+  background-color: #9370db;
+
+}
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: rgb(1, 1, 19);
+}
+.profiles {
+display: flex;
+flex-direction: column;
+gap: 3rem;
+}
+.profile {
+  display: flex;
+  text-align: center;
+  border: 1px solid rgb(206, 200, 200);
+  border-radius: 2px;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin: auto 100px;
+  
+}
+.quotes {
+  
+  color: #9370db;
+  padding: 50px 30px;
+}
+.earn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2.5rem;
+  color: rgb(1, 1, 19);
+  font-weight: bold;
+gap: 10px;
+}
+
+.svg-button {
+  font-family: monospace;
+  border-color: rgb(1, 1, 19);
+  background-color: #9370db;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 12px;
+  width: 60%;
+  justify-content: space-between;
+  border-width: 3px;
+}
+
+
+.svg-button:hover {
+  background-color: rgb(1, 1, 19);
+  color: white;
+}
+.icon-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  margin-left: 20px;
+}
+.end {
+  display: flex;
+  margin-top: 50px;
+  color: rgb(1, 1, 19);
+  background-color: #9370db;
+}
+.left-end {
+  
+  width: 50%;
+  padding-left: 50px;
+  
+}
+.left-end p {
+  margin-bottom: 35px;
+  font-size: 18px;
+}
+.guides {
+  
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-right: 50px;
+  padding-left: 20px;
+}
+.links {
+  display: flex;
+ gap: 50px;
+}
+.link {
+  display: flex;
+  flex-direction: column;
+ gap: 20px;
+}
+.trend {
+  text-align: center;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: rgb(1, 1, 19);
+}
+a:hover {
+  text-decoration: underline;
+}
+.end-end {
+  display: flex;
+  justify-content: space-around;
+  padding: 70px 100px;
+  background-color: #9370db;
+}
+@media screen and (max-width:760px){
+  body{
+    overflow-x: hidden;
+  }
+  header{
+    font-size: 20px;
+  }
+  .search-bar{
+    display: none;
+  }
+  h1 {
+    max-width: 100%;
+    font-size: 30px;
+    text-align: left;
+  }
+  .subhead{
+    max-width: 100%;
+    font-size: 15px;
+  }
+  .logos{
+    width: 100%;
+  }
+.profile{
+  flex-wrap: wrap;
+  border: none;
+}
+nav{
+  display: flex;
+}
+.nav-links{
+  position: absolute;
+  right: 0px;
+  height: 50%;
+  width: 100%;
+  top: 1rem;
+  background-color: rgb(1, 1, 19);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+  
+}
+.navlinks li{
+  opacity: 0;
+}
+.burger{
+  display: block;
+  cursor: pointer;
+}
+.menu-button, .sign-button{
+  display: none;
+}
+.breakfast{
+  display: flex;
+}
+.end{
+  flex-wrap: wrap;
+}
+.left-end{
+  width: 100%;
+}
+.end-end{
+  
+  padding: 70px 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+}
+.nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+opacity: 1;
+transform: translateX(0px);
+  }
+}
+
+
